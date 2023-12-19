@@ -1,0 +1,29 @@
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Photos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="background">
+    <div id="container">
+      <ion-card style="padding-top: 1rem; padding-bottom: 1rem; background-color: #e89860;">
+        <ion-row class="row" style="color: white;">
+          VEJA AQUI SUAS FOTOS
+        </ion-row>
+        <ion-grid class="title" style="padding-top: 1rem; padding-left: 1rem; padding-right: 1rem;">
+          <ion-row>
+            <ion-col *ngFor="let photo of colectionPhotos">
+              <ion-card>
+                <img [src]="photo">
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <ion-row class="row">
+          <ion-button fill="outline" (click)="menu()">Voltar ao menu</ion-button>
+        </ion-row>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

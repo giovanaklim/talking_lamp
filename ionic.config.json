@@ -1,0 +1,12 @@
+{
+  "name": "TalkingLamp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "plugins": {
+    "VoiceRecorder": {
+      "permissions": ["RECORD_AUDIO"]
+    }
+  }
+}

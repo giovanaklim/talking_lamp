@@ -1,0 +1,22 @@
+
+<ion-content [fullscreen]="true">
+  <div class="background">
+    <div id="container">
+      <ion-img [src]="lamp"></ion-img>
+      <ion-row style="justify-content: space-between; margin-top: 2rem;">
+        <ion-fab-button >
+          <ion-icon *ngIf="recording == false"name="mic" (click)="inicializar('start')"></ion-icon>
+          <ion-icon *ngIf="recording == true" name="square"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button (click)="menu()">
+          <ion-icon name="home"></ion-icon>
+        </ion-fab-button> 
+        <ion-fab-button (click)="abrir()">
+          <ion-icon name="camera"></ion-icon>
+        </ion-fab-button>
+      </ion-row>
+     
+    </div>
+  </div>
+</ion-content>
+

@@ -1,0 +1,23 @@
+.row{
+  align-items: center;
+  justify-content: center !important;
+  width: 100%;
+}
+#container {
+  text-align: center;
+  padding-top: 10rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.background{
+  height: 100vh  !important;
+  width: 100wh !important;
+  background-image: url('../../assets/inferno_fundo.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
